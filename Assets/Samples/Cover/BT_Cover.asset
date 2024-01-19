@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8648155305774922254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ecbd642284b504ca1789fb521bbe87, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  nodeName: Sequencer
+  nodePosition: {x: 267, y: 225}
+  breakpoint: 0
+  decorators:
+  - {fileID: -6558613102500063325}
+  services: []
+  children:
+  - {fileID: -2717672648528409437}
+  - {fileID: -8439761913094789598}
+  - {fileID: -5126750850072337423}
+  - {fileID: 354412568173680232}
+--- !u!114 &-8439761913094789598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e90db66f959ab4ab3a96f08fdf7fe2, type: 3}
+  m_Name: RunEQSQueryTask
+  m_EditorClassIdentifier: 
+  nodeName: Run EQS Query
+  nodePosition: {x: 210, y: 394}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  key: {fileID: 4539658777788705430, guid: db7f3c3f56a1dad499a3197793c51a8e, type: 2}
+  environmentQuery: {fileID: 11400000, guid: 341d59b906bd74f4d810a4e1c251dce0, type: 2}
+  sampling: 0.2
+--- !u!114 &-8418262724797859525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85263108a8bd9e0469feac3580755ae9, type: 3}
+  m_Name: WaitTask
+  m_EditorClassIdentifier: 
+  nodeName: Wait
+  nodePosition: {x: 798, y: 225}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  waitTime: {fileID: -6249825846919612562}
+  randomDeviation: {fileID: 0}
+--- !u!114 &-6558613102500063325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188f33bd97f999943bfba3bc98458f77, type: 3}
+  m_Name: BlackboardConditionDecorator
+  m_EditorClassIdentifier: 
+  nodeName: Blackboard Condition
+  nodePosition: {x: 0, y: 0}
+  breakpoint: 0
+  child: {fileID: 0}
+  notifyObserver: 1
+  observerAbort: 2
+  key: {fileID: 3945271353976964537, guid: db7f3c3f56a1dad499a3197793c51a8e, type: 2}
+  keyQuery:
+    rid: 3888547204253614081
+  references:
+    version: 2
+    RefIds:
+    - rid: 3888547204253614081
+      type: {class: TransformQuery, ns: RenownedGames.AITree, asm: AITree}
+      data:
+        comparer: 0
+--- !u!114 &-6249825846919612562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd402de4eb7669046830c326d89b03b4, type: 3}
+  m_Name: waitTime
+  m_EditorClassIdentifier: 
+  category: 
+  description: 
+  sync: 0
+  isLocal: 1
+  value: 1
+--- !u!114 &-5126750850072337423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbae3368fdc71954abc4bb1cdb37ba8b, type: 3}
+  m_Name: MoveToTask
+  m_EditorClassIdentifier: 
+  nodeName: Move To
+  nodePosition: {x: 424, y: 394}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  key: {fileID: 4539658777788705430, guid: db7f3c3f56a1dad499a3197793c51a8e, type: 2}
+  acceptableRadius: 0.1
+  includeAgentRadius: 1
+  includeGoalRadius: 1
+  allowPartialPath: 0
+  trackMovingGoal: 1
+  goLastPointOnLost: 1
+--- !u!114 &-2717672648528409437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8eb552a888e4f4e95fe1dd36caf1c1, type: 3}
+  m_Name: SendMessageTask
+  m_EditorClassIdentifier: 
+  nodeName: Send Message
+  nodePosition: {x: 0, y: 394}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  receiver: {fileID: -8105613219048020068, guid: db7f3c3f56a1dad499a3197793c51a8e,
+    type: 2}
+  methodName: ChangeFovColor
+  valueKey: {fileID: 1176168922195921542}
+--- !u!114 &-979010117949261979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9bdc4129dd9f64c97141f9b4995906, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  nodeName: Root
+  nodePosition: {x: 399, y: 0}
+  breakpoint: 0
+  child: {fileID: 1984605369732600451}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f7a65a64ca895842abc0e2c774d054e, type: 3}
+  m_Name: BT_Cover
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 11400000, guid: db7f3c3f56a1dad499a3197793c51a8e, type: 2}
+  updateMode: 0
+  tickRate: 30
+  rootNode: {fileID: -979010117949261979}
+  nodes:
+  - {fileID: -979010117949261979}
+  - {fileID: -6558613102500063325}
+  - {fileID: -5126750850072337423}
+  - {fileID: 1984605369732600451}
+  - {fileID: -8418262724797859525}
+  - {fileID: -8648155305774922254}
+  - {fileID: -8439761913094789598}
+  - {fileID: -2717672648528409437}
+  - {fileID: 354412568173680232}
+  groups: []
+  notes: []
+  selectedNode: {fileID: 0}
+--- !u!114 &354412568173680232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8eb552a888e4f4e95fe1dd36caf1c1, type: 3}
+  m_Name: SendMessageTask
+  m_EditorClassIdentifier: 
+  nodeName: Send Message
+  nodePosition: {x: 588, y: 394}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  receiver: {fileID: -8105613219048020068, guid: db7f3c3f56a1dad499a3197793c51a8e,
+    type: 2}
+  methodName: ChangeFovColor
+  valueKey: {fileID: 3194372195640166492}
+--- !u!114 &1176168922195921542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4342cf7e7aa28924ab39d3e45018358f, type: 3}
+  m_Name: valueKey
+  m_EditorClassIdentifier: 
+  category: 
+  description: 
+  sync: 0
+  isLocal: 1
+  value: 1
+--- !u!114 &1984605369732600451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1770628119ce54980deb844516c178, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  nodeName: Selector
+  nodePosition: {x: 384.5, y: 107}
+  breakpoint: 0
+  decorators: []
+  services: []
+  children:
+  - {fileID: -8648155305774922254}
+  - {fileID: -8418262724797859525}
+--- !u!114 &3194372195640166492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4342cf7e7aa28924ab39d3e45018358f, type: 3}
+  m_Name: valueKey
+  m_EditorClassIdentifier: 
+  category: 
+  description: 
+  sync: 0
+  isLocal: 1
+  value: 0

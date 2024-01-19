@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6471a1a821c8b14ca4c2339104e0578, type: 3}
+  m_Name: ShowcaseCollection
+  m_EditorClassIdentifier: 
+  showcases:
+  - name: Avoiding
+    sceneName: AiAvoiding
+    description: In this demonstration, the AI showcases its perception system, allowing
+      it to track the player's movements. However, when the AI unexpectedly detects
+      a larger adversary, it succumbs to fear and hurriedly flees, showcasing its
+      ability to adapt to changing circumstances.
+    preview: {fileID: 21300000, guid: c0e9a4ea933d96d4db5f2547e8cd2981, type: 3}
+  - name: Gold Mining
+    sceneName: GoldMining
+    description: Resource gathering takes on the form of collective coordination
+      among AI entities in this demonstration. In a remarkable display of choreographed
+      harmony, they gather valuable resources and consistently deposit them into
+      a repository, unveiling their intellectual cohesion and cooperation in behavior.
+    preview: {fileID: 21300000, guid: 31d4261bc6615a54ebe8df1c0181298a, type: 3}
+  - name: Stealth
+    sceneName: Security
+    description: 'In this demonstration, the player must collect all the coins while
+      evading the vigilant AI. The journey demands cunning, as the AI employs its
+      perception system and strategic patrolling to apprehend the intruder.      '
+    preview: {fileID: 21300000, guid: 9324d43785eeb4749aaa6e2af5492560, type: 3}
+  - name: Raider
+    sceneName: Raider
+    description: In a world adorned with coins, AI assumes the role of tireless treasure
+      hunters, traversing the map and scrutinizing the terrain for concealed riches.
+      With its advanced perception system and analytical prowess, the AI demonstrates
+      its ability to scan the environment effectively.
+    preview: {fileID: 21300000, guid: 574d429feb10a234c9edc3fa0b260696, type: 3}
+  - name: Cover
+    sceneName: Cover
+    description: The player engages in an enthralling game of hide-and-seek with
+      an AI that ingeniously selects hiding spots, leveraging its precise perception
+      system and environmental analysis. This demonstration illustrates how AI can
+      intelligently adapt to remain unnoticed.
+    preview: {fileID: 21300000, guid: 2e92631939aacfb4c87e15a3dae0f16f, type: 3}

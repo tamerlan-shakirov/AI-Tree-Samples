@@ -1,0 +1,379 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7076317841334679047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd402de4eb7669046830c326d89b03b4, type: 3}
+  m_Name: waitTime
+  m_EditorClassIdentifier: 
+  category: 
+  description: 
+  sync: 0
+  isLocal: 1
+  value: 3
+--- !u!114 &-5800759877898229045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4342cf7e7aa28924ab39d3e45018358f, type: 3}
+  m_Name: valueKey
+  m_EditorClassIdentifier: 
+  category: 
+  description: 
+  sync: 0
+  isLocal: 1
+  value: 1
+--- !u!114 &-5530166645515112668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85263108a8bd9e0469feac3580755ae9, type: 3}
+  m_Name: WaitTask
+  m_EditorClassIdentifier: 
+  nodeName: Wait
+  nodePosition: {x: 1366, y: 343}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  waitTime: {fileID: -7076317841334679047}
+  randomDeviation: {fileID: 0}
+--- !u!114 &-5404558302146679943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbae3368fdc71954abc4bb1cdb37ba8b, type: 3}
+  m_Name: MoveToTask
+  m_EditorClassIdentifier: 
+  nodeName: Move To
+  nodePosition: {x: 969, y: 343}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  key: {fileID: -5207984338511118068, guid: 4274c43c3c333954982f5845cae4caec, type: 2}
+  acceptableRadius: 0.1
+  includeAgentRadius: 1
+  includeGoalRadius: 1
+  allowPartialPath: 0
+  trackMovingGoal: 1
+  goLastPointOnLost: 1
+--- !u!114 &-4872473451408230555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8eb552a888e4f4e95fe1dd36caf1c1, type: 3}
+  m_Name: SendMessageTask
+  m_EditorClassIdentifier: 
+  nodeName: Send Message
+  nodePosition: {x: 0, y: 394}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  receiver: {fileID: -6089466059999717810, guid: 4274c43c3c333954982f5845cae4caec,
+    type: 2}
+  methodName: ChangeFovColor
+  valueKey: {fileID: -5800759877898229045}
+--- !u!114 &-4003051757395054918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8eb552a888e4f4e95fe1dd36caf1c1, type: 3}
+  m_Name: SendMessageTask
+  m_EditorClassIdentifier: 
+  nodeName: Send Message
+  nodePosition: {x: 584, y: 343}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  receiver: {fileID: -6089466059999717810, guid: 4274c43c3c333954982f5845cae4caec,
+    type: 2}
+  methodName: ChangeFovColor
+  valueKey: {fileID: -3578526129088500230}
+--- !u!114 &-3578526129088500230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4342cf7e7aa28924ab39d3e45018358f, type: 3}
+  m_Name: valueKey
+  m_EditorClassIdentifier: 
+  category: 
+  description: 
+  sync: 0
+  isLocal: 1
+  value: 0
+--- !u!114 &-3504103442864063089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188f33bd97f999943bfba3bc98458f77, type: 3}
+  m_Name: BlackboardConditionDecorator
+  m_EditorClassIdentifier: 
+  nodeName: Blackboard Condition
+  nodePosition: {x: 0, y: 0}
+  breakpoint: 0
+  child: {fileID: 0}
+  notifyObserver: 1
+  observerAbort: 2
+  key: {fileID: 7100590351127931945, guid: 4274c43c3c333954982f5845cae4caec, type: 2}
+  keyQuery:
+    rid: 3888547195144110082
+  references:
+    version: 2
+    RefIds:
+    - rid: 3888547195144110082
+      type: {class: TransformQuery, ns: RenownedGames.AITree, asm: AITree}
+      data:
+        comparer: 0
+--- !u!114 &-3341733162905503043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc90431795049814f98a46980d410360, type: 3}
+  m_Name: WayPointTask
+  m_EditorClassIdentifier: 
+  nodeName: Way Point
+  nodePosition: {x: 794, y: 343}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  key: {fileID: -5207984338511118068, guid: 4274c43c3c333954982f5845cae4caec, type: 2}
+  wayName: Way
+  selectionType: 2
+  startNearestPoint: 1
+  lastIndex: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f7a65a64ca895842abc0e2c774d054e, type: 3}
+  m_Name: BT_Security 1
+  m_EditorClassIdentifier: 
+  blackboard: {fileID: 11400000, guid: 4274c43c3c333954982f5845cae4caec, type: 2}
+  updateMode: 0
+  tickRate: 30
+  rootNode: {fileID: 5522632057482075763}
+  nodes:
+  - {fileID: 5522632057482075763}
+  - {fileID: -3504103442864063089}
+  - {fileID: 8896729293495829289}
+  - {fileID: 635459785180477357}
+  - {fileID: 8227590402033580863}
+  - {fileID: -5530166645515112668}
+  - {fileID: -3341733162905503043}
+  - {fileID: -5404558302146679943}
+  - {fileID: 6527761315737021955}
+  - {fileID: 8657121209774954104}
+  - {fileID: 6203273680516836148}
+  - {fileID: -4872473451408230555}
+  - {fileID: -4003051757395054918}
+  groups: []
+  notes: []
+  selectedNode: {fileID: 0}
+--- !u!114 &635459785180477357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1770628119ce54980deb844516c178, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  nodeName: Selector
+  nodePosition: {x: 668.5, y: 107}
+  breakpoint: 0
+  decorators: []
+  services: []
+  children:
+  - {fileID: 8657121209774954104}
+  - {fileID: 8227590402033580863}
+--- !u!114 &5522632057482075763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9bdc4129dd9f64c97141f9b4995906, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  nodeName: Root
+  nodePosition: {x: 683, y: 0}
+  breakpoint: 0
+  child: {fileID: 635459785180477357}
+--- !u!114 &6203273680516836148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8eb552a888e4f4e95fe1dd36caf1c1, type: 3}
+  m_Name: SendMessageTask
+  m_EditorClassIdentifier: 
+  nodeName: Send Message
+  nodePosition: {x: 374, y: 394}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  receiver: {fileID: 7100590351127931945, guid: 4274c43c3c333954982f5845cae4caec,
+    type: 2}
+  methodName: Catch
+  valueKey: {fileID: 0}
+--- !u!114 &6527761315737021955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b822d536356a74c43aebbd0bd55da77c, type: 3}
+  m_Name: LookAtFreeSpaceTask
+  m_EditorClassIdentifier: 
+  nodeName: Look At Free Space
+  nodePosition: {x: 1133, y: 343}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  rays: 32
+  heightOffset: 1.65
+  maxDistance: 10
+  cullingLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  rotationSpeed: 180
+--- !u!114 &8227590402033580863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ecbd642284b504ca1789fb521bbe87, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  nodeName: Sequencer
+  nodePosition: {x: 951, y: 225}
+  breakpoint: 0
+  decorators: []
+  services: []
+  children:
+  - {fileID: -4003051757395054918}
+  - {fileID: -3341733162905503043}
+  - {fileID: -5404558302146679943}
+  - {fileID: 6527761315737021955}
+  - {fileID: -5530166645515112668}
+--- !u!114 &8657121209774954104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ecbd642284b504ca1789fb521bbe87, type: 3}
+  m_Name: SequencerNode
+  m_EditorClassIdentifier: 
+  nodeName: Sequencer
+  nodePosition: {x: 160, y: 225}
+  breakpoint: 0
+  decorators:
+  - {fileID: -3504103442864063089}
+  services: []
+  children:
+  - {fileID: -4872473451408230555}
+  - {fileID: 8896729293495829289}
+  - {fileID: 6203273680516836148}
+--- !u!114 &8896729293495829289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbae3368fdc71954abc4bb1cdb37ba8b, type: 3}
+  m_Name: MoveToTask
+  m_EditorClassIdentifier: 
+  nodeName: Move To
+  nodePosition: {x: 210, y: 394}
+  breakpoint: 0
+  decorators: []
+  services: []
+  ignoreAbortSelf: 0
+  key: {fileID: 7100590351127931945, guid: 4274c43c3c333954982f5845cae4caec, type: 2}
+  acceptableRadius: 0.1
+  includeAgentRadius: 1
+  includeGoalRadius: 1
+  allowPartialPath: 0
+  trackMovingGoal: 1
+  goLastPointOnLost: 1
